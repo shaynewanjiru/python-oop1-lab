@@ -2,7 +2,7 @@
 
 class Coffee:
     def __init__(self, size, price):
-        self.size = input("The size of coffee available is either small, medium or large. your chosen size is: ")
+        self.size = input("The size of coffee available is either Small, Medium or Large. your chosen size is: ")
         self.price = int(input("Please enter the price of the coffee: "))
 
     @property
@@ -11,7 +11,7 @@ class Coffee:
         
     @size.setter
     def size(self, value):    
-        if value in ["small", "medium", "large"]:
+        if value in ["Small", "Medium", "Large"]:
             self._size = value
             print(f"You chose a {value} size coffee")
         else:
